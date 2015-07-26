@@ -365,12 +365,14 @@ class rest_api_handler(object):
         self.off_cmd = off_cmd
 
     def on(self):
-        r = requests.get(self.on_cmd)
-        return r.status_code == 200
+        #r = requests.get(self.on_cmd)
+        #return r.status_code == 200
+        return True
 
     def off(self):
-        r = requests.get(self.off_cmd)
-        return r.status_code == 200
+        #r = requests.get(self.off_cmd)
+        #return r.status_code == 200
+        return True
 
 
 FAUXMOS = [
